@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click To GO</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #141414, #2b1d2f, #3a1c2b);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+header {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 15px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #ffb347;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #ff5f6d;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* HEADINGS */
+h1 {
+  margin-top: 30px;
+  font-size: 42px;
+  background: linear-gradient(45deg, #ff9966, #ff5e62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* BOOKMARK LAYOUT */
+.bookmarks {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.bookmark-item {
+  background: rgba(255,255,255,0.07);
+  padding: 20px;
+  border-radius: 18px;
+  width: 200px;
+  transition: 0.3s;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+.bookmark-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(255, 95, 109, 0.7);
+}
+
+.bookmark-item a {
+  text-decoration: none;
+  color: #ffd6a5;
+}
+
+.bookmark-item img {
+  width: 120px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="http://127.0.0.1:3000/c:/Users/logic/index.html?serverWindowId=603d63a1-67e4-4146-a221-5a90c3fc4fd2">Home</a>
+    <a href="http://127.0.0.1:3000/c:/Users/logic/About.html?serverWindowId=603d63a1-67e4-4146-a221-5a90c3fc4fd2">About Us</a>
+    <a href="http://127.0.0.1:3000/c:/Users/logic/Contacts.html?serverWindowId=603d63a1-67e4-4146-a221-5a90c3fc4fd2">Contact</a>
+  </nav>
+</header>
+
+<h1>Click To Go On Your Favourite Sites</h1>
+<h2>Site Bookmarks</h2>
+
+<div class="bookmarks">
+
+  <div class="bookmark-item">
+    <a href="https://www.youtube.com/" target="_blank">
+      <h2>YouTube</h2>
+      <img src="https://t3.ftcdn.net/jpg/06/34/31/96/360_F_634319630_txtgmPLEEQ8o4zaxec2WKrLWUBqdBBQn.jpg">
+    </a>
+  </div>
+
+  <div class="bookmark-item">
+    <a href="https://www.google.com/" target="_blank">
+      <h2>Google</h2>
+      <img src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw">
+    </a>
+  </div>
+
+  <div class="bookmark-item">
+    <a href="https://www.instagram.com/" target="_blank">
+      <h2>Instagram</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUanwGsQqv8Gt7VAoc7blO3hj7h8tvX5Nig&s">
+    </a>
+  </div>
+   <div class="bookmark-item">
+    <a href="https://www.linkedin.com/" target="_blank">
+      <h2>Linkdin</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcn9YogzGC6__cQByiHfPA8PG34733q14Bow&s">
+    </a>
+  </div>
+  
+  
+
+</div>
+
+</body>
+</html>
